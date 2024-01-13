@@ -1,2 +1,2 @@
 # WebPages
-webpages
+This repository contains my webpages that I created while studying in TUC.
