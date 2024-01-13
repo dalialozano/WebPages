@@ -1,0 +1,90 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+header {
+    background-color: #011F4B;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+.breadcrumb {
+    padding: 0 .5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+  }
+  
+  .breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+ .breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .2em;
+    content: "→";
+    color:#0078d4;
+  }
+
+h1 {
+    font-size: 1em;
+    margin: 0;
+}
+
+header p {
+    font-size: .5em;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    background-color: #fff;
+    margin: .5em;
+    padding: 1em;
+    border: .1em solid #ddd;
+    box-shadow: 0 0 .8em rgba(0, 0, 0, 0.1);
+}
+
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .5em;
+    text-align: left;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* This make the image a block then we can put in the center */
+    margin: 0 auto; /* this for put the image in the center */
+}
+
+h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    color: #fff;
+}
+
+.highlight-h {
+
+    background-color: #0078d4;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: .2em solid #0078d4;
+    padding-left: .8em;
+    margin: .5em 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+}

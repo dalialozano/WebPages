@@ -1,0 +1,140 @@
+/* @import "C:\\Users\\Admin\\Desktop\\TUC\\HTML\\Grupparbete\\styles.css"; */
+ @import "styles.css";
+
+ :root {
+    --large-fontsize: 1.7em;  /*introduction, main h1*/
+    --medium-fontsize: 1.3em; /*vacancy list li*/
+    --small-fontsize: 1em; /*vacancy list*/
+}
+
+main h1 {
+    font-size: var(--large-fontsize)
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-height: 100vh;
+    flex-flow: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+
+.vacancy-list ul {
+    list-style-type: none;
+}
+
+
+.vacancy-list li {
+    list-style-type: none;
+    font-size: var(--medium-fontsize);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.vacancy-list li a {
+    text-align:center;
+}
+
+
+.introduction {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: var(--large-fontsize);
+    color: #005B96;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+section {
+    width: 100%;
+}
+
+
+section .grid-container {
+    justify-content:center;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.vacancy-list {
+    list-style: none;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    width:100%;
+    justify-items: stretch;
+    justify-content:center;
+}
+
+.vacancy-list li {
+    margin-bottom: 1em;
+    border: .5em solid #005B96;
+    padding: 1em;
+}
+
+.vacancy-list a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: var(--medium-fontsize);
+    white-space: nowrap;
+    
+}
+
+.vacancy-list a:hover {
+    color: #005B96;
+}
+
+
+.vacancy-list li p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--small-fontsize);
+    color: #005B96;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vacancylist span {
+    background-color: #0078d4;
+    border-radius: .5em;
+    padding: .3em;
+}
+
+.date {
+    color: #005B96;
+    font-size: var(--small-fontsize);
+    text-decoration: underline solid #005B96;
+    text-align: center;
+
+} 
+
+.date p h2 h3 span {
+
+    white-space: nowrap;
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 540px) {
+    *{
+        --large-fontsize:1.7em;
+        --medium-fontsize:1.1em;
+        --small-fontsize:0.8em;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    *{
+        --large-fontsize:1.4em;
+        --medium-fontsize:.9em;
+        --small-fontsize:.7em;
+    }
+}

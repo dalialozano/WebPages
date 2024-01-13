@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandringsleder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/icons/logo.png" alt="">
+        <nav>
+            <label for="show-menu" class="show-menu">Meny</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="naringsliv.html">Näringsliv</a></li>
+                <li>
+                    <a href="#">Kommun & Politik &nbsp;￬&nbsp;</a>
+                    <ul class="hidden">
+                        <li><a href="kommunstyrelsen.html">Kommunstyrelsen</a></li>
+                        <li><a href="kommunfakta.html">Kommunfakta</a></li>
+                        <li><a href="forvaltningar.html">Förvaltningar</a></li>
+                    </ul>
+                </li>
+                <li><a href="lediga-jobb.html">Lediga Jobb</a></li>
+                <li><a href="Barn_utbildning.html">Barn & Utbilding</a></li>
+                <li>
+                    <a href="#">Kultur & Fritid &nbsp;￬&nbsp;</a>
+                    <ul class="hidden">
+                        <li><a href="kulturFritid.html">Kultur</a></li>
+                        <li><a href="/Badhus-Erik/index.html">Badhuset</a></li>
+                        <li><a href="/Fritidsgård-Isabella/index.html">Fritidsgården</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="breadcrumb">
+        <li><a href="kulturFritid.html">Kultur & Fritid</a></li>
+        <li>Vandringsleder</li>
+    </ul>
+
+    <section id="eventSection">
+        <h1>Vandringsleder</h1>
+        <p>Här får du tips på upplevelser utomhus såsom vandringsleder,<br> cykelleder och naturreservat. </p>
+        <img src="graphics/nature.jpg">
+    </section>
+
+    <article id="kulturFritidArticle">
+        <p>Många vandringsleder och promenadstråk i Tucaryds kommun ligger nära bebyggelse. Andra vandringar leder dig ut på en vandringsled på en vidsträckt mosse eller långt upp på ett utsiktsberg.</p>         
+        <p>Vandringslederna är färgmarkerade i naturen och har information om sevärdheter. Några har audioguider (du scannar en QR-kod med din mobil och får en ljudberättelse) om natur och kultur som du kan lyssna på under din vandring.</p>         
+        <p>Promenaderna är tips på rundor som inte är markerade i naturen.</p>    
+        <p>Längst ned på sidan finns en kartbild där du kan se alla vandringsleder och promenader i kommunen.</p>
+        <a href="download/map.pdf" download>Klicka här för att ladda ner kartor för vandringsleder.</a>
+        <img src="graphics/nature2.jpg">
+
+        <div class="dropdown">
+            <input type="checkbox" id="dropdown" />
+            <label for="dropdown" class="dropdown-btn">
+              <span>Lista över vandrings- och promenadleder</span>
+              <span class="arrow"></span>
+            </label>
+            <ul class="dropdown-content">
+              <li><a href="#">Vandringsled 1</a></li>
+              <li><a href="#">Vandringsled 2</a></li>
+              <li><a href="#">Vandringsled 3</a></li>
+              <li><a href="#">Promenadled 1</a></li>
+              <li><a href="#">Promenadled 2</a></li>
+              <li><a href="#">Promenadled 3</a></li>
+            </ul>       
+        </div>
+
+        <h2>Cykelleder</h2>
+        <p>Kommunens första cykelutflyktsled, Brantleden, finns rekommenderade sträckor och rundturer som går kors och tvärs mellan Uppgränna i norr och Huskvarna i söder. Här kan du cykla i vackra omgivningar med omväxlande grus- och asfaltsvägar.</p>
+        <img src="graphics/biking.jpg">
+        <p>Mountainbikebanor finns på flera platser i kommunen och har tagits fram tillsammans med föreningslivet och cykelentusiaster. De är väl uppmärkta i naturen.<br>
+        Leden är markerad med skyltar i mörkblå bottenfärg och tryck i vitt. Du kan cykla leden i båda riktningarna men vanligast är att börja med den norra sidan av Hemfjärden.</p>
+        <a href="download/map.pdf" download>Klicka här för att ladda ner kartor för cykelleder.</a>
+    </article>
+
+    <footer>
+        <div class="grid-container-footer">
+            <img class="icon-contact" src="graphics/blank.png" alt="blank">
+            <span class="highlight-footer">KONTAKT</span>
+        </div>
+        <div class="grid-container-footer">
+            <img class="icon-contact" src="graphics/telefon.png" alt="telephone">
+            <span class="highlight-footer">0322 - 8675 309</span>
+        </div>
+        <div class="grid-container-footer">
+            <img src="graphics/email.png" alt="email">
+            <span class="highlight-footer">info@tucarydkommun.se</span>
+        </div>
+        <div class="grid-container-footer">
+            <img src="graphics/address.png" alt="address">
+            <span class="highlight-footer">Kungsgatan 10</span>
+        </div>
+        <div class="grid-container-footer">
+            <img src="graphics/identification.png" alt="identification">
+            <span class="highlight-footer">12585741</span>
+        </div>
+    </footer>
+</body>
+</html>

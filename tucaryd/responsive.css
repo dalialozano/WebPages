@@ -1,0 +1,258 @@
+@media only screen and (max-width: 1240px){
+
+    #background-box{
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    a{
+        font-size: 1em;
+    }
+
+    .headerLink{
+        width: 150px;
+    }
+
+    .headerHome-h1{
+        margin-top: -150px;
+        font-size: 2em;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    p{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #oppettider{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    #news{
+        font-size: 2em;
+    }
+
+    article{
+        flex-direction: column;
+        margin-left: 17%;
+    }
+
+    .newBoxes{
+        width: 80%;
+    }
+
+    .newsText{
+        width: 100%;
+    }
+
+    .newsImg{
+        margin-left: 12%;
+    }
+
+    #background-box{
+        margin-top: 300px;
+        margin-left: 10%;
+        width: 60%;
+        height: 300px;
+    }
+
+    #title-activities{
+        font-size: 2em;
+    }
+
+    #activities-h3{
+        margin-top: -200px;
+    }
+
+    #text-activities{
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+    .activities-box-dark, .activities-boxes{
+        margin-left: 10%;
+        text-align: center;
+    }
+
+    .newsText-dark{
+        margin-left: 10%;
+    }
+
+    #form-background{
+        height:550px;
+    }
+
+    .contactPhoneEmail{
+        font-size: 1.2em;
+    }
+    
+}
+/*Inom måsvingarna är stylen för hur hemsidan ska se ut när den är 900px bred*/
+
+@media only screen and (max-width: 700px){
+    #dropDown-responsive{
+        display: inline-block;
+    }
+
+    #dropDown-content{
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        background-color:#03396c;
+        width: 200px;
+        height: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+    }
+
+    #dropDown-btn{
+        background-color: inherit;
+        margin-right: 60px;
+        border: none;
+    }
+
+    #dropDown-responsive:hover #dropDown-content{
+        display: block;
+    }
+
+    li{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    a:hover{
+        color: white;
+    }
+
+    ul{
+        display: none;
+    }
+
+
+    .headerHome-h1{
+        font-size: 1.5em;
+        margin-top: -200px;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    .P{
+        margin-left: 20%;
+    }
+
+    #H2{
+        margin-left: 25%;
+    }
+
+    #background-box{
+        margin-top: 370px;
+    }
+
+    #title-activities{
+        font-size: 1.5em;
+    }
+
+    #activities-h3{
+        font-size: 1.5em;
+    }
+
+    .activities-box-dark, .activities-boxes{
+        margin-left: 0px;
+    }
+
+    #contactUs-h3{
+        font-size: 1.5em;
+    }
+
+    label{
+        font-size: 1em;
+    }
+
+    .form-inputs-btn{
+        font-size: 1em;
+    }
+
+    #contact-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .contactPhoneEmail{
+        font-size: 1em;
+    }
+}
+/*Inom måsvingarna är stylen för hur hemsidan ska se ut när den är 700px bred*/
+
+@media only screen and (max-width: 550px) {
+
+    #logoNav{
+        width: 130px;
+    }
+
+
+
+    img{
+        width: 30px;
+    }
+
+   
+
+
+    #oppettider{
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 0;
+    }
+
+    article, .newBoxes{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #background-box{
+        margin-top: 450px;
+        margin-left: 0px;
+        height: 400px;
+        width: 80%;
+    }
+
+    .activities-box-dark, .img-Activities, .activities-boxes{
+        width: 100%;
+    }
+
+    #form-background, #contact-box{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #footerKontakta, #footerH4{
+        display: none;
+    }
+
+    .icon{
+        width: 35px;
+    }
+    
+
+    
+}
+/*Inom måsvingarna är stylen för hur hemsidan ska se ut när den är 550px bred*/
+
+@media only screen and (max-width: 415px){
+    .headerHome-h1{
+        margin-top: -300px;
+    }
+
+    #background-box{
+        margin-top: 500px;
+    }
+}
+/*Inom måsvingarna är stylen för hur hemsidan ska se ut när den är 415px bred*/

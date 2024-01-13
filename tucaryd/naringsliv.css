@@ -1,0 +1,286 @@
+.container{
+    width:100%;
+}
+
+.container .container-content{
+    width:85%;
+    margin:20px auto;
+}
+
+.container .container-content .title{
+    width:60%;
+    text-align: center;
+    margin:auto;    
+}
+
+.container .container-content .title h2{
+    font-size: 40px;
+    color:#011F4B
+}
+
+.container .container-content .title p{
+    font-size: 18px;
+    color:#6a6a6a;
+    margin-top: 20px;
+}
+
+.container .container-content .forvaltningar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.container .container-content .forvaltningar .forvaltning{
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.container .container-content .forvaltningar .forvaltning img{
+    width: 100%;
+    height: auto;
+
+}
+
+.container .container-content .forvaltningar .forvaltning .text{
+    padding: 15px 20px;
+}
+
+.container .container-content .forvaltningar .forvaltning .text h4{
+    font-size: 24px;
+    color:4a4a4a;
+}
+
+.container .container-content .forvaltningar .forvaltning .text p{
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #6a6a6a;
+}
+
+:root {
+    --container-width:16em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-flow: column;
+    font-family: sans-serif;
+}
+
+main {
+    padding: 1em;
+    text-align: center;
+    flex-grow:1;
+}
+
+header {
+    background-color: #011F4B;
+    color: #fff;
+    padding: .5em;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    height: fit-content;
+}
+
+.logo {
+    margin-right: 5em;
+    height: 7em;    
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+header li {
+	display:inline-block;
+	margin-right: .1em;
+}
+
+header li a {
+	display:block;
+	min-width: 8.9em;
+	height: 2.2em;
+	text-align: center;
+	line-height: 2.2em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color:#011F4B;
+	background:#B3CDE0 ;
+	text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+
+header li:hover a {
+	background: #ccc;
+}
+
+header li:hover ul a {
+	background: #ccc;
+	color: #011F4B;
+	height: 2.2em;
+	line-height: 2.2em;
+}
+
+header li:hover ul a:hover {
+	background: #005B96;
+	color: #fff;
+}
+
+
+header li ul {
+	display: none;
+}
+
+header li ul li {
+	display: block;
+	float: none;
+}
+
+header li ul li a {
+	width: auto;
+	min-width: 6em;
+	padding: 0 1.1em;
+}
+
+header ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+.show-menu {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight:bold;
+	text-decoration: none;
+	color: #fff;
+	background: #005B96;
+	text-align: center;
+    
+
+	padding: .5em;
+	display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+
+footer {
+
+    display:grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#011F4B; /*Important to fill gap between elements with the color */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    align-items: center; 
+    color: #011F4B;
+    bottom: 0; 
+    position:relative; /*important to let the footer place itself after the main*/
+    width:100%; 
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns:repeat(auto-fit, minmax(var(--container-width), 1fr));
+
+
+}
+
+
+.grid-container-footer{
+    display:flex;
+    align-items: center;
+    padding: .5em 1em; /* we need to pad here because we want the images and the texts to be in the same level */
+}
+
+
+footer .grid-container-footer img {
+max-height: 3vw;
+min-height: 1em;
+width:auto;    
+padding-left: 1em;
+padding-right: 1em;
+
+}
+
+
+footer .grid-container-footer .highlight-footer {
+    background-color: #B3CDE0;
+    padding: .3em .5em;
+    border-radius: 0.5em;
+    white-space:nowrap; /*Dont break phone number into parts*/
+    overflow: hidden;
+
+}
+
+@media screen and (max-width : 880px){
+	ul {
+		position: static;
+		display: none;
+	}
+    .logo {
+        margin-right: 5em;
+        height: 7em;
+        margin: auto; 
+    }
+
+	li {
+		margin-bottom: .1em;
+	}
+
+	ul li, li a {
+		width: 100%;
+	}
+
+	.show-menu {
+		display:block;
+		cursor:pointer;
+	}
+
+    footer {
+        font-size: .8em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+    
+    .grid-item h3  {
+       font-size: .8em;
+    }
+
+    .grid-item p {
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width : 992px){
+
+    .container .container-content .forvaltningar{
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width : 768px){
+
+    .container .container-content .forvaltningar{
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
